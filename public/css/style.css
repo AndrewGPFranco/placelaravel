@@ -169,3 +169,28 @@ label {
 .flash-msg p {
     padding: 5px;
 }
+
+.show-sinopse {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 35px;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+.show-sinopse img {
+    height: 400px;
+    width: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.infos-sinopse {
+    padding: 20px;
+}
+
+.infos-sinopse p {
+    font-size: 1.2em;
+}

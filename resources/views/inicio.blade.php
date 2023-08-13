@@ -11,13 +11,12 @@
 </div>
 <section class="container-card">
     @foreach ($series as $serie)
-    <div class="card" style="width: 22rem; margin: 10px;">
+    <div class="card" style="width: 22rem; margin-top: 20px;">
         <img src="/img/series/{{ $serie->image }}" alt="{{ $serie->name }}">
         <div class="card-body">
           <h5 class="card-title">{{ $serie->name }}</h5>
-          <p class="card-text">{{ $serie->descricao }}</p>
           <p><strong>Postado:</strong> {{ $serie->created_at }}</p>
-          <a href="{{ $serie->link }}" target="blank" class="btn btn-primary">Acessar sinopse</a>
+          <a href="/series/{{$serie->id}}" class="btn btn-primary">Acessar sinopse</a>
         </div>
     </div>
     @endforeach
