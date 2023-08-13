@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar-css {
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+}
+
+.navbar-css-ul a {
+    color: rgb(0, 0, 0) !important;
+    display: flex !important;
+}
+
+.text-logo {
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: #000014f6;;
+    padding: 3px;
+    color: white;
+    text-align: center;
+}
+
+.banner img {
+    height: 400px;
+    width: 100%;
+}
+
+.container-titulos {
+    text-align: center;
+    background-color: #000014f6;
+    height: 50px;
+}
+
+.container-titulos h1 {
+    color: white;
+    padding: 25px;
+    font-size: 3em;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000014f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center !important;
+    padding: 40px;
+}
+
+.card img {
+    height: 250px !important;
+}
+
+li {
+    padding: 10px;
+}
+
+.li-css img {
+    padding: 5px;
+}
+
+.li-css {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    min-height: 50px;
+    max-width: 250px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+.button--submit {
+    min-height: 50px;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button--submit:hover {
+    background-color: #ff0000;
+}
+
+.input:focus,
+.input:focus-visible {
+    border-color: #000000;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5e4dcd;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.linha {
+    margin-top: 5px;
+    height: 3px;
+    background-color: rgb(231, 231, 231);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    background-color: rgb(231, 231, 231);
+}
+
+.formulario h1 {
+    text-align: center;
+}
+
+label {
+    margin: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.flash-msg {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.flash-msg p {
+    padding: 5px;
+}
