@@ -23,7 +23,6 @@ class InicioController extends Controller
         $serie = new Serie();
         $serie->name = $request->name;
         $serie->descricao = $request->descricao;
-        $serie->imagem = $request->imagem;
         $serie->link = $request->link;
 
         if($request->hasFile('image') && $request->file('image')->isValid()) {
