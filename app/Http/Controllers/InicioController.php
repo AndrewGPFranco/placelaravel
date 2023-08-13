@@ -37,4 +37,11 @@ class InicioController extends Controller
 
         return redirect('/')->with('msg', 'Post adicionado com sucesso!');
     }
+
+    public function show($id)
+    {
+        $serie = Serie::findOrFail($id);
+
+        return view ('show', ['serie' => $serie]);
+    }
 }

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InicioController::class, 'index']);
 Route::get('/series/create', [InicioController::class, 'create']);
+Route::get('/series/{id}', [InicioController::class, 'show']);
 Route::post('/series', [InicioController::class, 'store']);
 
 // Route::get('/serie/{id}', function($id) {
