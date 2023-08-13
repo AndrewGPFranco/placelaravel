@@ -28,7 +28,7 @@
                 <li>
                     <div class="li-css">
                         <img src="/img/bell.svg" alt="Icone de uma casa">
-                        <a href="#" target="blank">Novidades</a>
+                        <a href="/">Novidades</a>
                     </div>
                 </li>
                 <li>
@@ -62,7 +62,7 @@
         </div>
     </main>
     <footer>
-        <h5>&copy; Desenvolvido por Andrew Silva!</h5>
+        <h5>&copy; Todos os direitos reservados a Andrew Silva</h5>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
