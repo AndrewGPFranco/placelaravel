@@ -24,6 +24,7 @@ class InicioController extends Controller
         $serie->name = $request->name;
         $serie->descricao = $request->descricao;
         $serie->link = $request->link;
+        $serie->items = $request->items;
 
         if($request->hasFile('image') && $request->file('image')->isValid()) {
             $requestImage = $request->image;

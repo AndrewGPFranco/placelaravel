@@ -10,6 +10,14 @@
         <p>{{ $serie->name }}</p>
         <h4><strong>Descrição:</strong></h4>
         <p>{{ $serie->descricao }}</p>
+        <h4>Status:</h4>
+        @if ($serie->items !== null)
+            <ul>
+                @foreach ($serie->items as $item)
+                    <li>{{ $item }}</li>
+                @endforeach
+            </ul>
+        @endif
         <p>
             <a href="{{ $serie->link }}" target="blank">Assista agora pela Crunchyroll</a>
         </p>

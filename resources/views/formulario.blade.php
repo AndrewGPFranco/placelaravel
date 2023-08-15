@@ -22,6 +22,12 @@
             <label for="image">Imagem:</label>
             <input type="file" name="image" id="image" class="form-control">
         </div>
+        <div class="form-group">
+            <label for="items">Status:</label>
+            <input type="checkbox" name="items[]" value="Finalizado">Finalizado
+            <input type="checkbox" name="items[]" value="Em andamento">Em andamento
+            <label for="items"></label>
+        </div>
         <input type="submit" value="Cadastrar" class="btn btn-primary">
     </form>
 </section>
