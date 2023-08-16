@@ -126,7 +126,6 @@ a:hover {
 
 ::-webkit-scrollbar-thumb {
     background-color: #5e4dcd;
-    border-radius: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -161,10 +160,11 @@ label {
 .flash-msg {
     text-align: center;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: rgba(13, 151, 0, 0.582);
+    color: rgb(48, 48, 48);
     font-weight: bold;
     font-size: 2em;
+    margin-bottom: -16px;
 }
 
 .flash-msg p {
@@ -177,15 +177,16 @@ label {
     padding: 30px;
     border: 1px solid black;
     margin: 35px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: rgb(231, 231, 231);
+    box-shadow: 1px 1px 3px purple;
 }
 
 .show-sinopse img {
     height: 500px;
     width: 500px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 .infos-sinopse {

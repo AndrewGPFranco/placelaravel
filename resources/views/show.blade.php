@@ -17,6 +17,8 @@
                     <li>{{ $item }}</li>
                 @endforeach
             </ul>
+        @else
+            <li>Sem informações...</li>
         @endif
         <p>
             <a href="{{ $serie->link }}" target="blank">Assista agora pela Crunchyroll</a>
