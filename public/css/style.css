@@ -194,3 +194,14 @@ label {
 .infos-sinopse p {
     font-size: 1.2em;
 }
+
+input[type="checkbox"] {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.checkbox {
+    margin-top: 7px;
+}
