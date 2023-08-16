@@ -61,7 +61,9 @@ li {
 }
 
 .li-css img {
-    padding: 5px;
+    margin-top: -5px;
+    margin-right: 10px;
+    align-items: center;
 }
 
 .li-css {
@@ -73,12 +75,16 @@ li {
 
 a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
+    padding: 10px;
 }
 
 a:hover {
     color: red;
     text-decoration: underline;
+    background-color: #5e4dcd;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
 }
 
 .input {
@@ -176,18 +182,15 @@ label {
 }
 
 .show-sinopse img {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin-right: 10px;
     border-radius: 5px;
 }
 
 .infos-sinopse {
+    height: 500px;
     padding: 20px;
-}
-
-.infos-sinopse p {
-    font-size: 1.2em;
 }
 
 input[type="checkbox"] {

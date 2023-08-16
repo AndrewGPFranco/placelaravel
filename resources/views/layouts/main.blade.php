@@ -14,33 +14,26 @@
     <nav class="navbar navbar-expand-lg navbar-css">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
-            <a class="navbar-brand text-logo" href="/"><img src="/img/logo.png" style="height: 40px;" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <img src="/img/logo.png" style="height: 40px; margin-right: 40px;" alt="">
             <ul class="navbar-nav">
                 <li>
                     <div class="li-css">
-                        <img src="/img/house-door.svg" alt="Icone de uma casa">
-                        <a href="/">Inicio</a>
+                        <a href="/"><img src="/img/house-door.svg" alt="Icone de uma casa">Inicio</a>
                     </div>
                 </li>
                 <li>
                     <div class="li-css">
-                        <img src="/img/bell.svg" alt="Icone de uma casa">
-                        <a href="/">Novidades</a>
+                        <a href="/"><img src="/img/bell.svg" alt="Icone de uma casa">Novidades</a>
                     </div>
                 </li>
                 <li>
                     <div class="li-css">
-                        <img src="/img/bookmark-check.svg" alt="Icone de uma casa">
-                        <a href="/series/create">Sugestões</a>
+                        <a href="/series/create"><img src="/img/bookmark-check.svg" alt="Icone de uma casa">Sugerir Anime</a>
                     </div>
                 </li>
                 <li>
                     <div class="li-css">
-                        <img src="/img/telephone-outbound.svg" alt="Icone de uma casa">
-                        <a href="https://www.linkedin.com/in/andrewgpsilva/" target="blank">Contato</a>
+                        <a href="https://www.linkedin.com/in/andrewgpsilva/" target="blank"><img src="/img/telephone-outbound.svg" alt="Icone de uma casa">Contato</a>
                     </div>
                 </li>
             </ul>
