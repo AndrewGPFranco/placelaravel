@@ -46,10 +46,6 @@
             </ul>
           </div>
         </div>
-        <div class="input-group">
-            <input type="email" class="input" id="Email" name="Email" placeholder="Entre com seu úsuario..." autocomplete="off">
-            <input class="button--submit" value="Entrar" type="submit">
-        </div>
     </nav>
     <main>
         <div>

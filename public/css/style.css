@@ -81,11 +81,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.input-group {
-    display: flex;
-    align-items: center;
-}
-
 .input {
     min-height: 50px;
     max-width: 250px;
@@ -204,4 +199,9 @@ input[type="checkbox"] {
 
 .checkbox {
     margin-top: 7px;
+}
+
+.botoes-acoes {
+    display: flex;
+    justify-content: space-between;
 }

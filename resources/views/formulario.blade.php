@@ -20,7 +20,7 @@
         </div>
         <div class="form-group">
             <label for="image"><strong>Imagem:</strong></label>
-            <input type="file" name="image" id="image" class="form-control">
+            <input type="file" name="image" id="image" class="form-control" required>
         </div>
         <div class="form-group checkbox">
             <label for="items"><strong>Status:</strong></label>

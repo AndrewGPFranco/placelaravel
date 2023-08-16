@@ -16,7 +16,14 @@
         <div class="card-body">
           <h5 class="card-title">{{ $serie->name }}</h5>
           <p><strong>Postado:</strong> {{ $serie->created_at }}</p>
-          <a href="/series/{{$serie->id}}" class="btn btn-primary">Acessar sinopse</a>
+          <div class="botoes-acoes">
+              <a href="/series/{{$serie->id}}" class="btn btn-primary">Acessar sinopse</a>
+              <form action="/series/{{$serie->id}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Excluir</button>
+              </form>
+          </div>
         </div>
     </div>
     @endforeach

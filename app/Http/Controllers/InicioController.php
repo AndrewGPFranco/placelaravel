@@ -45,4 +45,11 @@ class InicioController extends Controller
 
         return view ('show', ['serie' => $serie]);
     }
+
+    public function destroy($id)
+    {
+        Serie::findOrFail($id)->delete();
+
+        return redirect('/')->with('msg', 'Post removido com sucesso!');
+    }
 }
