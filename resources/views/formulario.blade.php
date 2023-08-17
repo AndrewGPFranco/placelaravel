@@ -2,6 +2,7 @@
 @section('title', 'Place TV - Cadastre um Post')
 @section('content')
 
+@auth
 <section class="formulario">
     <h1>Cadastre um post novo...</h1>
     <form action="/series" method="POST" enctype="multipart/form-data">
@@ -34,5 +35,6 @@
         <input type="submit" value="Cadastrar" class="btn btn-primary">
     </form>
 </section>
+@endauth
 
 @endsection

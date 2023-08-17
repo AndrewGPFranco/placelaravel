@@ -26,14 +26,21 @@
                         <a href="/"><img src="/img/bell.svg" alt="Icone de uma casa">Novidades</a>
                     </div>
                 </li>
+                @auth
                 <li>
                     <div class="li-css">
                         <a href="/series/create"><img src="/img/bookmark-check.svg" alt="Icone de uma casa">Sugerir Anime</a>
                     </div>
                 </li>
+                @endauth
                 <li>
                     <div class="li-css">
                         <a href="https://www.linkedin.com/in/andrewgpsilva/" target="blank"><img src="/img/telephone-outbound.svg" alt="Icone de uma casa">Contato</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-css">
+                        <a href="/register"></a>
                     </div>
                 </li>
             </ul>

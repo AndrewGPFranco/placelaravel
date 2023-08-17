@@ -18,11 +18,13 @@
           <p class="card-title">Data da Publicação: {{ date('d/m/y', strtotime($serie->date)) }}</p>
           <div class="botoes-acoes">
               <a href="/series/{{$serie->id}}" class="btn btn-primary">Acessar sinopse</a>
+              @auth
               <form action="/series/{{$serie->id}}" method="POST">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Excluir</button>
               </form>
+              @endauth
           </div>
         </div>
     </div>
