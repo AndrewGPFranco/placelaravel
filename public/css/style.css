@@ -87,16 +87,34 @@ a:hover {
     color: rgb(0, 0, 0);
 }
 
-.input {
-    min-height: 50px;
-    max-width: 250px;
-    padding: 0 1rem;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #5e4dcd;
-    border-radius: 6px 0 0 6px;
-    background-color: transparent;
-}
+.input-container {
+    width: 220px;
+    position: relative;
+  }
+
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+  }
+
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px black;
+  }
 
 .button--submit {
     min-height: 50px;
@@ -208,4 +226,20 @@ input[type="checkbox"] {
 .botoes-acoes {
     display: flex;
     justify-content: space-between;
+}
+
+.search {
+    margin-left: 40px;
+}
+
+.sem-post {
+    color: rgb(143, 0, 0);
+}
+
+.container-sem-post {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
 }

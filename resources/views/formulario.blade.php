@@ -19,6 +19,10 @@
             <input type="text" name="link" id="link" placeholder="Digite o link..." class="form-control" required autocomplete="off">
         </div>
         <div class="form-group">
+            <label for="date"><strong>Data:</strong></label>
+            <input type="date" name="date" id="date" class="form-control" required>
+        </div>
+        <div class="form-group">
             <label for="image"><strong>Imagem:</strong></label>
             <input type="file" name="image" id="image" class="form-control" required>
         </div>

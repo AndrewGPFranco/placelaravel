@@ -9,8 +9,17 @@ class InicioController extends Controller
 {
     public function index()
     {
-        $series = Serie::all();
-        return view('inicio', ['series' => $series]);
+        $search = Request('search');
+
+        if($search) {
+            $series = Serie::where([
+                ['name', 'like', '%'.$search.'%']
+            ])->get();
+        } else {
+            $series = Serie::all();
+        }
+
+        return view('inicio', ['series' => $series, '$search' => $search]);
     }
 
     public function create()
@@ -25,6 +34,7 @@ class InicioController extends Controller
         $serie->descricao = $request->descricao;
         $serie->link = $request->link;
         $serie->items = $request->items;
+        $serie->date = $request->date;
 
         if($request->hasFile('image') && $request->file('image')->isValid()) {
             $requestImage = $request->image;

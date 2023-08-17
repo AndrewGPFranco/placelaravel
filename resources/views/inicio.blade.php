@@ -15,6 +15,7 @@
         <img src="/img/series/{{ $serie->image }}" alt="{{ $serie->name }}">
         <div class="card-body">
           <h5 class="card-title">{{ $serie->name }}</h5>
+          <p class="card-title">Data da Publicação: {{ date('d/m/y', strtotime($serie->date)) }}</p>
           <div class="botoes-acoes">
               <a href="/series/{{$serie->id}}" class="btn btn-primary">Acessar sinopse</a>
               <form action="/series/{{$serie->id}}" method="POST">
@@ -26,6 +27,16 @@
         </div>
     </div>
     @endforeach
+
+    @if(count($series) === 0)
+        <div class="container-sem-post">
+            <h1><span class="sem-post">Nenhum anime foi encontrado...</span></h1>
+        </div>
+    @endif
+
+    @if(count($series) <= 3)
+    <p><a href="/">Mostrar todos...</a></p>
+    @endif
 </section>
 <div class="linha_dois"></div>
 
