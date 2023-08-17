@@ -38,11 +38,31 @@
                         <a href="https://www.linkedin.com/in/andrewgpsilva/" target="blank"><img src="/img/telephone-outbound.svg" alt="Icone de uma casa">Contato</a>
                     </div>
                 </li>
+                @guest
                 <li>
                     <div class="li-css">
-                        <a href="/register"></a>
+                        <a href="/register"><img src="/img/shield-lock.svg" alt="icone de cadeado">Registrar</a>
                     </div>
                 </li>
+                <li>
+                    <div class="li-css">
+                        <a href="/login"><img src="/img/person.svg" alt="icone de user">Login</a>
+                    </div>
+                </li>
+                @endguest
+                @auth
+                <li>
+                    <div class="li-css">
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <a href="/logout"
+                            onclick="event.preventDefault();
+                            this.closest('form').submit();">
+                            Sair</a>
+                        </form>
+                    </div>
+                </li>
+                @endauth
             </ul>
             <div class="search">
                 <form action="/" method="GET">
