@@ -243,3 +243,7 @@ input[type="checkbox"] {
     align-items: center;
     text-align: center;
 }
+
+.btn-sair {
+    margin-top: 10px;
+}

@@ -52,12 +52,12 @@
                 @endguest
                 @auth
                 <li>
-                    <div class="li-css">
+                    <div class="li-css btn-sair">
                         <form action="/logout" method="POST">
                             @csrf
                             <a href="/logout"
                             onclick="event.preventDefault();
-                            this.closest('form').submit();">
+                            this.closest('form').submit();"><img src="/img/box-arrow-in-right.svg" alt="icone para sair">
                             Sair</a>
                         </form>
                     </div>
