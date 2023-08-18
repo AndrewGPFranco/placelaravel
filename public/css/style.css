@@ -33,12 +33,12 @@ footer {
 .container-titulos {
     text-align: center;
     background-color: #000014f6;
-    height: 50px;
+    height: 100px;
 }
 
 .container-titulos h1 {
     color: white;
-    padding: 25px;
+    padding: 50px;
     font-size: 3em;
 }
 
@@ -255,7 +255,8 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: rgb(180, 180, 180);
-    border: 1px solid black;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 iframe {
