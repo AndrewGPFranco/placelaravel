@@ -9,6 +9,7 @@ Route::get('/series/create', [InicioController::class, 'create']);
 Route::get('/series/{id}', [InicioController::class, 'show']);
 Route::post('/series', [InicioController::class, 'store']);
 Route::delete('/series/{id}', [InicioController::class, 'destroy']);
+Route::get('/novidades', [InicioController::class, 'novidades']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

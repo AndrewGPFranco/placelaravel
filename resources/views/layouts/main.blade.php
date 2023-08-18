@@ -23,7 +23,7 @@
                 </li>
                 <li>
                     <div class="li-css">
-                        <a href="/"><img src="/img/bell.svg" alt="Icone de uma casa">Novidades</a>
+                        <a href="/novidades"><img src="/img/bell.svg" alt="Icone de uma casa">Projetos</a>
                     </div>
                 </li>
                 @auth

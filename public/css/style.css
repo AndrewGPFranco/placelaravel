@@ -247,3 +247,21 @@ input[type="checkbox"] {
 .btn-sair {
     margin-top: 10px;
 }
+
+.container-iframes {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 180, 180);
+    border: 1px solid black;
+}
+
+iframe {
+    padding: 20px;
+}
+
+.container-iframes-filho {
+    display: flex;
+}
