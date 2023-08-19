@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InicioController::class, 'index']);
@@ -10,6 +11,9 @@ Route::get('/series/{id}', [InicioController::class, 'show']);
 Route::post('/series', [InicioController::class, 'store']);
 Route::delete('/series/{id}', [InicioController::class, 'destroy']);
 Route::get('/novidades', [InicioController::class, 'novidades']);
+
+Route::get('/videos', [VideoController::class, 'index']);
+Route::get('/videos/create', [VideoController::class, 'create']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
