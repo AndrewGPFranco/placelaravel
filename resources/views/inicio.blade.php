@@ -7,7 +7,7 @@
 </section>
 <div class="linha"></div>
 <div class="container-titulos">
-    <h1>O que há de melhor para o seu fim de semana?</h1>
+    <h1>Veja meus Animes Favoritos...</h1>
 </div>
 <section class="container-card">
     @foreach ($series as $serie)

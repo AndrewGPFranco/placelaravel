@@ -266,3 +266,7 @@ iframe {
 .container-iframes-filho {
     display: flex;
 }
+
+.alert {
+    margin-bottom: -10px;
+}

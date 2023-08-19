@@ -29,6 +29,23 @@ class InicioController extends Controller
 
     public function store(Request $request)
     {
+        $regras = [
+            'name' => 'required|min:5|max:25',
+            'descricao' => 'required|min:10|max:255',
+            'link' => 'required|url',
+        ];
+
+        $mensagens = [
+            'name.required' => 'O campo nome é obrigatório.',
+            'name.min' => 'O nome deve ter pelo menos 5 caracteres.',
+            'name.max' => 'O nome não pode ter mais de 25 caracteres.',
+            'descricao.required' => 'O campo descrição é obrigatório.',
+            'descricao.min' => 'A descrição deve ter pelo menos 5 caracteres.',
+            'descricao.max' => 'A descrição não pode ter mais de 255 caracteres.',
+            'link.required' => 'O campo link é obrigatório.',
+            'link.url' => 'Insira um link válido.',
+        ];
+
         $serie = new Serie();
         $serie->name = $request->name;
         $serie->descricao = $request->descricao;
@@ -44,9 +61,10 @@ class InicioController extends Controller
             $serie->image = $imageName;
         }
 
+        $request->validate($regras, $mensagens);
         $serie->save();
 
-        return redirect('/')->with('msg', 'Post adicionado com sucesso!');
+        return redirect('/',)->with('msg', 'Post adicionado com sucesso!');
     }
 
     public function show($id)
