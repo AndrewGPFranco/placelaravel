@@ -11,7 +11,7 @@
 @endguest
 
 @auth
-<section class="formulario">
+<section class="formulario form-video">
     <h1>Cadastre um vídeo novo...</h1>
     <form action="/videos" method="POST">
         @csrf

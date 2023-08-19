@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-css">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
-            <img src="/img/logo.png" style="height: 40px; margin-right: 40px;" alt="">
+            <img src="/img/logo.png" style="height: 40px; margin-right: 10px;" alt="">
             <ul class="navbar-nav">
                 <li>
                     <div class="li-css">
@@ -29,7 +29,12 @@
                 @auth
                 <li>
                     <div class="li-css">
-                        <a href="/series/create"><img src="/img/bookmark-check.svg" alt="Icone de uma casa">Sugerir Anime</a>
+                        <a href="/videos/create"><img src="/img/camera-video.svg" alt="Icone de uma casa">Cadastrar Vídeo</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-css">
+                        <a href="/series/create"><img src="/img/bookmark-check.svg" alt="Icone de uma casa">Cadastrar Anime</a>
                     </div>
                 </li>
                 @endauth
