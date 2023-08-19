@@ -265,26 +265,31 @@ iframe {
 }
 
 .container-iframes-pai {
-    border: 2px solid black;
-    margin: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     padding: 4px;
     border-radius: 10px;
-    background-color: #ff0000;
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 .container-iframes-filho {
     display: flex;
     flex-direction: column;
     width: 450px;
-    height: 460px;
+    height: 500px;
     padding: 20px;
     border: 1px solid black;
-    border-radius: 10px;
-    background-color: #786bca;
+    border-radius: 30px;
+    background: #212121;
     align-items: center;
     text-align: center;
+    color: white;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
 }
 
 .alert {
@@ -297,15 +302,17 @@ iframe {
 }
 
 .link-video {
-    color: white;
+    color: rgb(0, 255, 234);
 }
 
 .container-link {
     background-color: #5e4dcd;
-    padding: 10px;
+    padding: 5px;
     margin: 4px;
-    border-radius: 20px;
+    border-radius: 50px;
     width: 350px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
 }
 
 .form-video {

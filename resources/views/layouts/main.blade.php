@@ -69,6 +69,7 @@
                 </li>
                 @endauth
             </ul>
+            @if(Request::is('/'))
             <div class="search">
                 <form action="/" method="GET">
                     <div class="input-container">
@@ -79,6 +80,7 @@
                       </div>
                 </form>
             </div>
+            @endif
           </div>
         </div>
     </nav>

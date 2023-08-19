@@ -15,11 +15,11 @@
     <h1>Cadastre um vídeo novo...</h1>
     <form action="/videos" method="POST">
         @csrf
-        <div class="form-group">
+        <div class="user-box">
             <label for="nome"><strong>Nome do vídeo:</strong></label>
             <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o nome..." required autocomplete="off">
         </div>
-        <div class="form-group">
+        <div class="user-box">
             <label for="link"><strong>Link do vídeo:</strong></label>
             <input type="text" name="link" id="link" placeholder="Digite o link..." class="form-control" required autocomplete="off">
         </div>
