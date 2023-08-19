@@ -80,9 +80,4 @@ class InicioController extends Controller
 
         return redirect('/')->with('msg', 'Post removido com sucesso!');
     }
-
-    public function novidades()
-    {
-        return view('novidades');
-    }
 }

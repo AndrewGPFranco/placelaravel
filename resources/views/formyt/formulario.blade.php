@@ -2,9 +2,18 @@
 @section('title', 'Place TV - Cadastre um Vídeo')
 @section('content')
 
+@guest
+
+<div class="mensagem-erro">
+    <h1>Somente admins podem adicionar vídeos novos...</h1>
+</div>
+
+@endguest
+
+@auth
 <section class="formulario">
     <h1>Cadastre um vídeo novo...</h1>
-    <form action="/videos" method="POST" enctype="multipart/form-data">
+    <form action="/videos" method="POST">
         @csrf
         <div class="form-group">
             <label for="nome"><strong>Nome do vídeo:</strong></label>
@@ -17,5 +26,6 @@
         <input type="submit" value="Cadastrar" class="btn btn-primary">
     </form>
 </section>
+@endauth
 
 @endsection

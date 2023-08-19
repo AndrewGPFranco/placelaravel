@@ -250,7 +250,7 @@ input[type="checkbox"] {
 
 .container-iframes {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin: 30px;
     align-items: center;
     justify-content: center;
@@ -261,12 +261,37 @@ input[type="checkbox"] {
 
 iframe {
     padding: 20px;
+    border-radius: 10px;
+}
+
+.container-iframes-pai {
+    border: 2px solid black;
+    margin: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #ff0000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-iframes-filho {
     display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #786bca;
+    align-items: center;
+    text-align: center;
 }
 
 .alert {
     margin-bottom: -10px;
+}
+
+.mensagem-erro {
+    text-align: center;
+    padding: 30px;
 }

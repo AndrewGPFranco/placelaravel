@@ -10,10 +10,10 @@ Route::get('/series/create', [InicioController::class, 'create']);
 Route::get('/series/{id}', [InicioController::class, 'show']);
 Route::post('/series', [InicioController::class, 'store']);
 Route::delete('/series/{id}', [InicioController::class, 'destroy']);
-Route::get('/novidades', [InicioController::class, 'novidades']);
 
 Route::get('/videos', [VideoController::class, 'index']);
 Route::get('/videos/create', [VideoController::class, 'create']);
+Route::post('/videos', [VideoController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

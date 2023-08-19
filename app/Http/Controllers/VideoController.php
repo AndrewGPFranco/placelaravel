@@ -10,12 +10,12 @@ class VideoController extends Controller
     public function index()
     {
         $videos = Video::all();
-        return view ('formyt.formulario', ['videos' => $videos]);
+        return view ('novidades', ['videos' => $videos]);
     }
 
     public function create()
     {
-        return view ()
+        return view ('formyt.formulario');
     }
 
     public function store(Request $request)
