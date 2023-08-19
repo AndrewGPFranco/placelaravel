@@ -31,7 +31,7 @@ class InicioController extends Controller
     {
         $regras = [
             'name' => 'required|min:5|max:25',
-            'descricao' => 'required|min:10|max:255',
+            'descricao' => 'required|min:10|max:1000',
             'link' => 'required|url',
         ];
 
@@ -41,7 +41,7 @@ class InicioController extends Controller
             'name.max' => 'O nome não pode ter mais de 25 caracteres.',
             'descricao.required' => 'O campo descrição é obrigatório.',
             'descricao.min' => 'A descrição deve ter pelo menos 5 caracteres.',
-            'descricao.max' => 'A descrição não pode ter mais de 255 caracteres.',
+            'descricao.max' => 'A descrição não pode ter mais de 600 caracteres.',
             'link.required' => 'O campo link é obrigatório.',
             'link.url' => 'Insira um link válido.',
         ];

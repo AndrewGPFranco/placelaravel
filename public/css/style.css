@@ -262,6 +262,8 @@ input[type="checkbox"] {
 iframe {
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid purple;
+    margin-bottom: 8px;
 }
 
 .container-iframes-pai {
@@ -273,8 +275,6 @@ iframe {
     display: flex;
     flex-wrap: wrap;
 }
-
-
 
 .container-iframes-filho {
     display: flex;
@@ -292,6 +292,10 @@ iframe {
             -15px -15px 30px rgb(60, 60, 60);
 }
 
+.container-iframes-filho p {
+    color: rgb(0, 255, 234)
+}
+
 .alert {
     margin-bottom: -10px;
 }
@@ -302,6 +306,10 @@ iframe {
 }
 
 .link-video {
+    color: rgb(0, 255, 234);
+}
+
+.link-video:hover {
     color: rgb(0, 255, 234);
 }
 
