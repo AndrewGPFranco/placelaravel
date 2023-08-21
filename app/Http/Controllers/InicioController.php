@@ -41,7 +41,7 @@ class InicioController extends Controller
             'name.max' => 'O nome não pode ter mais de 25 caracteres.',
             'descricao.required' => 'O campo descrição é obrigatório.',
             'descricao.min' => 'A descrição deve ter pelo menos 5 caracteres.',
-            'descricao.max' => 'A descrição não pode ter mais de 600 caracteres.',
+            'descricao.max' => 'A descrição não pode ter mais de 1000 caracteres.',
             'link.required' => 'O campo link é obrigatório.',
             'link.url' => 'Insira um link válido.',
         ];
