@@ -6,10 +6,10 @@ use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InicioController::class, 'index']);
-Route::get('/series/create', [InicioController::class, 'create']);
+Route::get('/series/create', [InicioController::class, 'create'])->middleware('auth');;
 Route::get('/series/{id}', [InicioController::class, 'show']);
-Route::post('/series', [InicioController::class, 'store']);
-Route::delete('/series/{id}', [InicioController::class, 'destroy']);
+Route::post('/series', [InicioController::class, 'store'])->middleware('auth');;
+Route::delete('/series/{id}', [InicioController::class, 'destroy'])->middleware('auth');
 Route::get('/series/edit/{id}', [InicioController::class, 'edit'])->middleware('auth');
 Route::put('/series/update/{id}', [InicioController::class, 'update'])->middleware('auth');
 

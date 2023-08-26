@@ -27,7 +27,7 @@
         <div class="form-group img-edit">
             <label for="image"><strong>Imagem:</strong></label>
             <input type="file" name="image" id="image" class="form-control">
-            <img src="/img/series/{{$serie->image}}" alt="">
+            <div class="img-class-edit"><img src="/img/series/{{$serie->image}}" alt=""></div>
         </div>
         <div class="form-group checkbox">
             <label for="items"><strong>Status:</strong></label>
