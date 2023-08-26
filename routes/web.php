@@ -10,6 +10,8 @@ Route::get('/series/create', [InicioController::class, 'create']);
 Route::get('/series/{id}', [InicioController::class, 'show']);
 Route::post('/series', [InicioController::class, 'store']);
 Route::delete('/series/{id}', [InicioController::class, 'destroy']);
+Route::get('/series/edit/{id}', [InicioController::class, 'edit'])->middleware('auth');
+Route::put('/series/update/{id}', [InicioController::class, 'update'])->middleware('auth');
 
 Route::get('/videos', [VideoController::class, 'index']);
 Route::get('/videos/create', [VideoController::class, 'create']);

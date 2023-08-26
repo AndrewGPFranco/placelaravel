@@ -326,3 +326,9 @@ iframe {
 .form-video {
     height: 85vh;
 }
+
+.img-edit img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}

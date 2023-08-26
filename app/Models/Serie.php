@@ -14,4 +14,6 @@ class Serie extends Model
     ];
 
     protected $dates = ['date'];
+
+    protected $guarded = [];
 }

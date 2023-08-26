@@ -19,6 +19,7 @@
           <div class="botoes-acoes">
               <a href="/series/{{$serie->id}}" class="btn btn-primary">Acessar sinopse</a>
               @auth
+              <a href="/series/edit/{{ $serie->id }}" class="btn btn-secondary">Editar</a>
               <form action="/series/{{$serie->id}}" method="POST">
                 @csrf
                 @method('DELETE')
