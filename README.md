@@ -1,66 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Projeto CRUD utilizando Laravel by Andrew Silva
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descrição
 
-## About Laravel
+Este projeto é um aplicativo web fullstack desenvolvido utilizando o framework Laravel, que implementa todas as operações de CRUD (Create, Read, Update, Delete) em um sistema de gerenciamento de itens. Além disso, o projeto também possui um sistema de autenticação de usuários para garantir a segurança das informações.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Funcionalidades
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O aplicativo possui as seguintes funcionalidades:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Cadastro de Usuários:** Os usuários podem se registrar e criar contas no sistema.
+2. **Login e Logout:** Os usuários podem fazer login de forma segura no sistema e fazer logout quando desejarem.
+3. **Gerenciamento de Itens:** Os usuários autenticados podem realizar as operações de CRUD (Create, Read, Update, Delete) em itens.
+   - **Create:** Adicionar novos itens com informações como nome, descrição e categoria.
+   - **Read:** Visualizar uma lista de todos os itens disponíveis.
+   - **Update:** Editar as informações dos itens existentes.
+   - **Delete:** Remover itens do sistema.
 
-## Learning Laravel
+## Tecnologias Utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Laravel:** Framework PHP utilizado para o desenvolvimento do backend do aplicativo.
+- **Bootstrap:** Framework CSS utilizado para o design responsivo e amigável do frontend.
+- **MySQL:** Banco de dados relacional para armazenamento persistente dos dados.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Estrutura do Projeto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+O projeto está organizado da seguinte forma:
 
-## Laravel Sponsors
+- `app/`: Contém os arquivos do backend do aplicativo Laravel.
+- `resources/views/`: Contém os arquivos de visualização em Blade, que compõem o frontend.
+- `routes/`: Define as rotas e endpoints da aplicação.
+- `database/`: Contém as migrações do banco de dados.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Instalação
 
-### Premium Partners
+1. Clone este repositório: `git clone <url_do_repositorio>`
+2. Instale as dependências do composer: `composer install`
+3. Copie o arquivo `.env.example` para `.env` e configure as informações do banco de dados.
+4. Gere a chave de aplicação: `php artisan key:generate`
+5. Execute as migrações para criar as tabelas do banco de dados: `php artisan migrate`
+6. Inicie o servidor de desenvolvimento: `php artisan serve`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Certifique-se de configurar corretamente o ambiente e as variáveis de ambiente necessárias antes de executar o projeto.
 
-## Contributing
+## Conclusão
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Este projeto demonstra a implementação completa de um sistema de CRUD utilizando o framework Laravel. Além disso, oferece um sistema de autenticação para garantir a segurança das operações. O uso de tecnologias como Laravel, Bootstrap e MySQL proporciona uma experiência de usuário fluida e eficaz.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Para mais detalhes sobre a implementação, consulte o código-fonte e a documentação do Laravel.
