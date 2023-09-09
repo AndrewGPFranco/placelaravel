@@ -37,25 +37,6 @@ class InicioController extends Controller
 
     public function store(Request $request)
     {
-        $regras = [
-            'name' => 'required|min:5|max:25',
-            'descricao' => 'required|min:10|max:1000',
-            'link' => 'required|url',
-        ];
-
-        $mensagens = [
-            'name.required' => 'O campo nome é obrigatório.',
-            'name.min' => 'O nome deve ter pelo menos 5 caracteres.',
-            'name.max' => 'O nome não pode ter mais de 25 caracteres.',
-            'descricao.required' => 'O campo descrição é obrigatório.',
-            'descricao.min' => 'A descrição deve ter pelo menos 5 caracteres.',
-            'descricao.max' => 'A descrição não pode ter mais de 1000 caracteres.',
-            'link.required' => 'O campo link é obrigatório.',
-            'link.url' => 'Insira um link válido.',
-        ];
-
-        $request->validate($regras, $mensagens);
-
         $data = $request->all();
         
         if($request->hasFile('image') && $request->file('image')->isValid()) {
@@ -66,7 +47,7 @@ class InicioController extends Controller
             $data['image'] = $imageName;
         }
         
-        $serie = $this->serieService->create($data);
+        $this->serieService->create($data);
 
         return redirect('/',)->with('msg', 'Post adicionado com sucesso!');
     }
