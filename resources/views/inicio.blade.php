@@ -3,9 +3,8 @@
 @section('content')
 
 <section class="banner">
-    <img src="/img/foto3.jpg" alt="">
+    <img src="/img/luffyg5.png" alt="Foto do Luffy">
 </section>
-<div class="linha"></div>
 <div class="container-titulos">
     <h1>Veja meus Animes Favoritos...</h1>
 </div>
