@@ -3,10 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\Serie;
+use App\Services\SerieService;
 use Illuminate\Http\Request;
 
 class InicioController extends Controller
 {
+    protected $serieService;
+    
+    public function __construct(SerieService $serieService)
+    {
+        $this->serieService = $serieService;
+    }
+
     public function index()
     {
         $search = Request('search');
@@ -16,7 +24,7 @@ class InicioController extends Controller
                 ['name', 'like', '%'.$search.'%']
             ])->get();
         } else {
-            $series = Serie::all();
+            $series = $this->serieService->getAll();
         }
 
         return view('inicio', ['series' => $series, '$search' => $search]);
@@ -46,50 +54,49 @@ class InicioController extends Controller
             'link.url' => 'Insira um link válido.',
         ];
 
-        $serie = new Serie();
-        $serie->name = $request->name;
-        $serie->descricao = $request->descricao;
-        $serie->link = $request->link;
-        $serie->items = $request->items;
-        $serie->date = $request->date;
+        $request->validate($regras, $mensagens);
 
+        $data = $request->all();
+        
         if($request->hasFile('image') && $request->file('image')->isValid()) {
             $requestImage = $request->image;
             $extension = $requestImage->extension();
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
             $requestImage->move(public_path('/img/series'), $imageName);
-            $serie->image = $imageName;
+            $data['image'] = $imageName;
         }
-
-        $request->validate($regras, $mensagens);
-        $serie->save();
+        
+        $serie = $this->serieService->create($data);
 
         return redirect('/',)->with('msg', 'Post adicionado com sucesso!');
     }
 
     public function show($id)
     {
-        $serie = Serie::findOrFail($id);
-
+        $serie = $this->serieService->getById($id);
         return view ('show', ['serie' => $serie]);
     }
 
     public function destroy($id)
     {
-        Serie::findOrFail($id)->delete();
-
+        $this->serieService->delete($id);
         return redirect('/')->with('msg', 'Post removido com sucesso!');
     }
 
     public function edit($id)
     {
-        $serie = Serie::findOrFail($id);
+        $serie = $this->serieService->getById($id);
         return view ('edit', ['serie' => $serie]);
     }
 
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
         $data = $request->all();
+        $success = $this->serieService->update($id, $data);
+
+        if (!$success) {
+            return redirect('/')->with('msg', 'Post não foi atuailizado!');
+        }
 
         if($request->hasFile('image') && $request->file('image')->isValid()) {
             $requestImage = $request->image;
@@ -99,7 +106,6 @@ class InicioController extends Controller
             $data['image'] = $imageName;
         }
 
-        Serie::findOrFail($request->id)->update($data);
         return redirect('/')->with('msg', 'Post editado com sucesso!');
     }
 }
