@@ -22,28 +22,24 @@ O aplicativo possui as seguintes funcionalidades:
 - **Bootstrap:** Framework CSS utilizado para o design responsivo e amigável do frontend.
 - **MySQL:** Banco de dados relacional para armazenamento persistente dos dados.
 
-## Estrutura do Projeto
+## Sobre Mim
 
-O projeto está organizado da seguinte forma:
+Me chamo Andrew, tenho 22 anos, sou um desenvolvedor Back-End, com bastante conhecimentos em Front-end.
 
-- `app/`: Contém os arquivos do backend do aplicativo Laravel.
-- `resources/views/`: Contém os arquivos de visualização em Blade, que compõem o frontend.
-- `routes/`: Define as rotas e endpoints da aplicação.
-- `database/`: Contém as migrações do banco de dados.
+### Minhas Habilidades Técnicas
 
-## Instalação
+- JavaScript
+- PHP
+- Java
+- Laravel
+- Spring Boot
+- Docker
+- MySQL
+- TypeScript
+- Vue 3
+- Angular
+- React
 
-1. Clone este repositório: `git clone <url_do_repositorio>`
-2. Instale as dependências do composer: `composer install`
-3. Copie o arquivo `.env.example` para `.env` e configure as informações do banco de dados.
-4. Gere a chave de aplicação: `php artisan key:generate`
-5. Execute as migrações para criar as tabelas do banco de dados: `php artisan migrate`
-6. Inicie o servidor de desenvolvimento: `php artisan serve`
+## Visite Meu LinkedIn
 
-Certifique-se de configurar corretamente o ambiente e as variáveis de ambiente necessárias antes de executar o projeto.
-
-## Conclusão
-
-Este projeto demonstra a implementação completa de um sistema de CRUD utilizando o framework Laravel. Além disso, oferece um sistema de autenticação para garantir a segurança das operações. O uso de tecnologias como Laravel, Bootstrap e MySQL proporciona uma experiência de usuário fluida e eficaz.
-
-Para mais detalhes sobre a implementação, consulte o código-fonte e a documentação do Laravel.
+Você pode conhecer mais sobre mim e meu trabalho visitando meu [perfil no LinkedIn](https://linkedin.com/in/andrewgpsilva). Fique à vontade para se conectar e trocar ideias!
