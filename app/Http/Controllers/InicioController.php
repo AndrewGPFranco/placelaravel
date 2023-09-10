@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SerieRequest;
 use App\Models\Serie;
 use App\Services\SerieService;
 use Illuminate\Http\Request;
@@ -35,7 +36,7 @@ class InicioController extends Controller
         return view('formulario');
     }
 
-    public function store(Request $request)
+    public function store(SerieRequest $request)
     {
         $data = $request->all();
         
@@ -70,7 +71,7 @@ class InicioController extends Controller
         return view ('edit', ['serie' => $serie]);
     }
 
-    public function update(Request $request, $id)
+    public function update(SerieRequest $request, $id)
     {
         $data = $request->all();
         $success = $this->serieService->update($id, $data);
