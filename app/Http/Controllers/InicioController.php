@@ -10,10 +10,12 @@ use Illuminate\Http\Request;
 class InicioController extends Controller
 {
     protected $serieService;
+    protected $model;
     
-    public function __construct(SerieService $serieService)
+    public function __construct(SerieService $serieService, Serie $model)
     {
         $this->serieService = $serieService;
+        $this->model = $model;
     }
 
     public function index()
@@ -28,7 +30,9 @@ class InicioController extends Controller
             $series = $this->serieService->getAll();
         }
 
-        return view('inicio', ['series' => $series, '$search' => $search]);
+        $itensPaginados = $this->model->paginate(3);
+
+        return view('inicio', ['series' => $series, '$search' => $search, 'paginator' => $itensPaginados]);
     }
 
     public function create()

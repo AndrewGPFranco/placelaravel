@@ -29,6 +29,10 @@
         </div>
     </div>
     @endforeach
+    <div class="containerPaginate">
+        <a href="{{ $paginator->previousPageUrl() }}" class="btn btn-link">Previous Page</a>
+        <a href="{{ $paginator->nextPageUrl() }}" class="btn btn-link">Next Page</a>
+    </div> 
 
     @if(count($series) === 0)
         <div class="container-sem-post">
