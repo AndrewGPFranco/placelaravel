@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Repositories\SerieRepositoryInterface;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 
 class SerieService
@@ -14,7 +15,7 @@ class SerieService
         $this->serieRepository = $serieRepository;
     }
 
-    public function getAll(): Collection
+    public function getAll(): LengthAwarePaginator
     {
         return $this->serieRepository->getAll();
     }

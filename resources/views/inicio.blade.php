@@ -36,7 +36,7 @@
         </div>
     @endif
 
-    @if(count($series) <= 3)
+    @if(count($series) <= 2)
     <p><a href="/">Mostrar todos...</a></p>
     @endif
 </section>

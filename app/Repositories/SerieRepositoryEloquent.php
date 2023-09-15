@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Serie;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection as SupportCollection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
@@ -16,9 +17,9 @@ class SerieRepositoryEloquent implements SerieRepositoryInterface
         $this->model = $model;
     }
 
-    public function getAll(): SupportCollection
+    public function getAll(): LengthAwarePaginator
     {
-        return $this->model->all();
+        return $this->model->paginate(3);
     }
 
     public function getById($id): ?Serie
