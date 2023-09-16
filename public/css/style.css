@@ -334,3 +334,8 @@ iframe {
     display: flex;
     justify-content: center;
 }
+
+.containerPaginate {
+    display: flex;
+    flex-direction: column;
+}
