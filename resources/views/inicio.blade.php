@@ -30,8 +30,12 @@
     </div>
     @endforeach
     <div class="containerPaginate">
+        @if($paginator->previousPageUrl())
         <a href="{{ $paginator->previousPageUrl() }}" class="btn btn-link">Previous Page</a>
+        @endif
+        @if($paginator->nextPageUrl())
         <a href="{{ $paginator->nextPageUrl() }}" class="btn btn-link">Next Page</a>
+        @endif
     </div> 
 
     @if(count($series) === 0)
