@@ -4,7 +4,6 @@ namespace App\Repositories;
 
 use App\Models\Serie;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection as SupportCollection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 

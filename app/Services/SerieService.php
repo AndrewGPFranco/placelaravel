@@ -4,7 +4,6 @@ namespace App\Services;
 
 use App\Repositories\SerieRepositoryInterface;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection;
 
 class SerieService
 {
@@ -27,19 +26,16 @@ class SerieService
 
     public function create(array $data)
     {
-        // Realize qualquer lógica adicional necessária antes de criar a série, se houver.
         return $this->serieRepository->create($data);
     }
 
     public function update($id, array $data): bool
     {
-        // Realize qualquer lógica adicional necessária antes de atualizar a série, se houver.
         return $this->serieRepository->update($id, $data);
     }
 
     public function delete($id): bool
     {
-        // Realize qualquer lógica adicional necessária antes de excluir a série, se houver.
         return $this->serieRepository->delete($id);
     }
 }

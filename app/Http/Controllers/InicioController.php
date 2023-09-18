@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SerieRequest;
 use App\Models\Serie;
 use App\Services\SerieService;
-use Illuminate\Http\Request;
 
 class InicioController extends Controller
 {
