@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/series', [SerieController::class, 'index']);
 Route::post('/series', [SerieController::class, 'store']);
+Route::get('/series/{id}', [SerieController::class, 'show']);
