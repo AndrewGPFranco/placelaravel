@@ -23,7 +23,7 @@ class SerieRepositoryEloquent implements SerieRepositoryInterface
 
     public function getById($id): ?Serie
     {
-        return $this->model->find($id);
+        return $this->model->findOrFail($id);
     }
 
     public function create(array $data): Serie
