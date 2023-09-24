@@ -7,6 +7,7 @@ use App\Http\Requests\SerieRequest;
 use App\Models\Serie;
 use App\Services\SerieService;
 use Exception;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class SerieController extends Controller
 {
@@ -30,15 +31,8 @@ class SerieController extends Controller
 
     public function show($id)
     {
-        try {
-            $serie = $this->service->getById($id);
-            if ($serie === null) {
-                return response()->json(['error' => 'Série não encontrada'], 404);
-            }
-            return $serie;
-        } catch (Exception $erro) {
-            return response()->json(['error' => $erro->getMessage()], 500);
-        }
+        $serie = $this->service->getById($id);
+        return response()->json($serie, 200);
     }
 
     public function destroy($id)
