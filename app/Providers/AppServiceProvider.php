@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Repositories\SerieRepositoryEloquent;
+use App\Repositories\SeriesRepositoryEloquent;
 use App\Repositories\SerieRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(SerieRepositoryInterface::class, SerieRepositoryEloquent::class);
+        $this->app->bind(SerieRepositoryInterface::class, SeriesRepositoryEloquent::class);
     }
 
     /**

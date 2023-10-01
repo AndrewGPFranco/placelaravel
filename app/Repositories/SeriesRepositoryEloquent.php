@@ -7,9 +7,9 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
-class SerieRepositoryEloquent implements SerieRepositoryInterface
+class SeriesRepositoryEloquent implements SerieRepositoryInterface
 {
-    protected $model;
+    protected Serie $model;
 
     public function __construct(Serie $model)
     {

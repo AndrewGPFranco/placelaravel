@@ -12,7 +12,7 @@ use Throwable;
 
 class SerieController extends Controller
 {
-    protected $model;
+    protected Serie $model;
 
     public function __construct(Serie $model)
     {
