@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SerieRequest;
 use App\Models\Serie;
+use App\Services\SerieService;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Throwable;
@@ -62,7 +63,6 @@ class SerieController extends Controller
 
         $data = $request->validated();
 
-        // Atualizar a série com os novos dados
         $serie->update($data);
 
         return response()->json(['message' => 'Série atualizada com sucesso'], 200);
