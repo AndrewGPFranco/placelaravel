@@ -5,7 +5,6 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SerieRequest;
 use App\Models\Serie;
-use App\Services\SerieService;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Throwable;
@@ -55,7 +54,6 @@ class SerieController extends Controller
 
     public function edit($id, SerieRequest $request)
     {
-        // Verificar se a série com o ID fornecido existe
         $serie = $this->model->find($id);
 
         if (!$serie) {
